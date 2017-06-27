@@ -141,6 +141,10 @@ Create a new resource group and app service plan:
 * On the **Settings** stage of the **Publish** dialog:
 
   * Expand **Databases** and check **Use this connection string at runtime**
+  
+  > [!NOTE]
+  > If you are using Connection Strings in **appsettings.json**, then leave this blank.
+  > Otherwise these settings will be saved on the remote Azure settings and appsettings.json ignored.
 
   * Expand **Entity Framework Migrations** and check **Apply this migration on publish**
 
